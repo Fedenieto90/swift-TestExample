@@ -1,2 +1,2 @@
 # swift-TestExample
-Swift Test Example project using Quik &amp; Nimble
+Swift Test Example project using Quick &amp; Nimble
