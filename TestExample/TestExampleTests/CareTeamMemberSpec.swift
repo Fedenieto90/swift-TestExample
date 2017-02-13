@@ -20,7 +20,7 @@ class CareTeamMemberSpec: QuickSpec {
         beforeEach {
             //Init a fake dictionary response
             let dictionary = NSDictionary(dictionary: ["name": "fede",
-                                                    "surname": "nieto",
+                                                    "lastName": "nieto",
                                                    "roleCode": 2,
                                                      "status": 1])
             
@@ -34,8 +34,8 @@ class CareTeamMemberSpec: QuickSpec {
                 expect(ct.name) .to(equal("fede"))
             })
             
-            it("the surname should be stored", closure: {
-                expect(ct.surname) .to(equal("nieto"))
+            it("the last name should be stored", closure: {
+                expect(ct.lastName) .to(equal("nieto"))
             })
             
             it("the roleCode should be stored", closure: {

@@ -16,13 +16,13 @@ class CareTeamMember: NSObject {
     }
     
     var name: String!
-    var surname: String!
+    var lastName: String!
     var roleCode: Int!
     var status: CareTeamMemberStatus!
     
     required init(dictionary: NSDictionary) {
         self.name = dictionary["name"] as! String
-        self.surname = dictionary["surname"] as! String
+        self.lastName = dictionary["lastName"] as! String
         self.roleCode = dictionary["roleCode"] as! Int
         self.status = .Inactive
         if (dictionary["status"] as! Int == 1) {
